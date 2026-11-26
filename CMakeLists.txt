@@ -24,9 +24,8 @@ juce_add_plugin(Kuzko
     VST3_CATEGORIES Fx EQ)
 
 target_sources(Kuzko PRIVATE
-    Source/PluginProcessor.cpp
-    Source/PluginEditor.cpp)
-
+    PluginProcessor.cpp
+    PluginEditor.cpp)
 # Fond optionnel : mets une image dans Assets/ nommee background.jpg ou background.png
 set(KUZKO_BG "")
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/Assets/background.jpg")
